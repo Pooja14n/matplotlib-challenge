@@ -87,6 +87,6 @@ Initial steps carried out prior to coding are:
 Referred to various class activity exercises, got support from Assistant Instructor, other peers, and websites for: Pandas Documentation, Stack Overflow, Matplotlib Documentation.
 
 # Files submitted including this README File
-Folder -> PyCitySchools
-Resources folder -> 2 Datasets provded for the analysis: a. schools_complete.csv b. students_complete.csv
-Jupyter Notebook that contains the main script to run for analysis and the report that includes a written description of at least two observable trends based on the data -> PyCitySchools_analysis.ipynb
+1. Folder -> Pymaceuticals
+   a. data folder -> 2 Datasets provded for the analysis: a. Mouse_metadata.csv b. Study_results.csv
+   b. Jupyter Notebook that contains the main script to run for analysis and the report that includes a written description of at least three observations based on the data -> pymaceuticals_starter.ipynb
