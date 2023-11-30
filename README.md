@@ -64,15 +64,27 @@ The summary statistics should include:
 # Note
 Initial steps carried out prior to coding are:
 
-Dependencies and Setup import pandas as pd; from pathlib import Path
-Files to Load: school_data_to_load = Path("Resources/schools_complete.csv"); student_data_to_load = Path("Resources/students_complete.csv")
-Read School and Student Data File and store into Pandas DataFrames: school_data = pd.read_csv(school_data_to_load); student_data = pd.read_csv(student_data_to_load)
-Combine the data into a single dataset:
-school_data_complete = pd.merge(student_data, school_data, how="left", on=["school_name", "school_name"]); and display the dataset school_data_complete.head()
-
+1. Dependencies and Setup:
+  a. `import matplotlib.pyplot as plt`
+  b. `import pandas as pd`
+  c. `import scipy.stats as st`
+  d. `from scipy.stats import sem`
+  e. `from scipy.stats import linregress`
+  f. `import numpy as np`
+2. Study data files:
+  a. `mouse_metadata_path = "data/Mouse_metadata.csv"`
+  b. `study_results_path = "data/Study_results.csv"`
+3. Read the mouse data and the study results: 
+  a. `mouse_metadata = pd.read_csv(mouse_metadata_path)`
+  b. `study_results = pd.read_csv(study_results_path)`
+4. Combine the data into a single DataFrame:
+    `combined_df = pd.merge(mouse_metadata, study_results, how='right')`
+5. Display the data table for preview;
+    `combined_df = combined_df[['Mouse ID', 'Timepoint', 'Tumor Volume (mm3)', 'Metastatic Sites','Drug Regimen', 'Sex', 'Age_months', 'Weight (g)']]`
+   combined_df.head()
 
 # References
-Referred to various class activity exercises, and websites for: Pandas Documentation, Stack Overflow, Geeksforgeeks, and Datatofish.
+Referred to various class activity exercises, got support from Assistant Instructor, other peers, and websites for: Pandas Documentation, Stack Overflow, Matplotlib Documentation.
 
 # Files submitted including this README File
 Folder -> PyCitySchools
